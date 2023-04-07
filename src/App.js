@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { Home } from "./views/Home";
 import { About } from "./views/About";
+import { MovieDetail } from "./views/MovieDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />}></Route>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/movie/:id" element={<MovieDetail />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
